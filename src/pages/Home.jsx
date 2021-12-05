@@ -1,7 +1,7 @@
 import {
   Swiper,
   SwiperSlide
-} from 'swiper/react'
+} from 'swiper/react/swiper-react.js'
 import SwiperCore, {
   EffectFade,
   Mousewheel,
@@ -12,7 +12,7 @@ SwiperCore.use([Mousewheel, Pagination, EffectFade])
 
 const swiperOptions = {
   direction: 'vertical',
-  slidersPerView: 1,
+  slidesPerView: 1,
   spaceBetween: 0,
   mousewheel: true,
   pagination: true,
@@ -30,7 +30,6 @@ const Home = () => {
         <SwiperSlide>
           slide 2
         </SwiperSlide>
-        
       </Swiper>
     </>
   )
