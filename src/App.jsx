@@ -1,7 +1,5 @@
 import 'swiper/swiper.scss'
-
-
-import './App.scss'
+import './assets/scss/styles.scss'
 
 import Header from './components/header/Header'
 import Home from './pages/Home'

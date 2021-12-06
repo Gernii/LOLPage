@@ -8,6 +8,10 @@ import SwiperCore, {
   Pagination
 } from 'swiper'
 
+import {
+  Welcome
+} from '../components/home-section'
+
 SwiperCore.use([Mousewheel, Pagination, EffectFade])
 
 const swiperOptions = {
@@ -25,7 +29,7 @@ const Home = () => {
     <>
       <Swiper  {...swiperOptions}>
         <SwiperSlide>
-          slide 1
+          {({isActive}) => <Welcome isActive={isActive}/>}
         </SwiperSlide>
         <SwiperSlide>
           slide 2

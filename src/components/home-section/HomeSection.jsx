@@ -3,9 +3,12 @@ import Section , {SectionContent} from '../section/Section'
 const HomeSection = props => {
     return (
         <Section
-            class
+            className={props.className}
         >
-            <SectionContent>
+            <SectionContent
+            className={props.contentClassName}
+            bgImage={props.bgImage}
+            >
                 {props.children}
             </SectionContent>
         </Section>

@@ -1,0 +1,21 @@
+@use '../../assets/scss/default/variables/font' as font;
+@use '../../assets/scss/default/variables/color' as color;
+@use '../../assets/scss/default/variables/size' as size;
+.btn {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: color.$txt-color;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 1.5rem 5rem;
+    font-family: font.$font-family;
+    border-top-left-radius: size.$border-radius;
+    border-bottom-right-radius: size.$border-radius;
+    &-main {
+        background-color: color.$main-color;
+    }
+    &-second {
+        background-color: color.$second-color;
+    }
+}

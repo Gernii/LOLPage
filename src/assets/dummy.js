@@ -19,8 +19,7 @@ import {
     bgLargeAkali
 } from './images'
 
-export const championsData = [
-    {
+export const championsData = [{
         img: cardAkali,
         name: 'akali',
         bg: bgAkali,

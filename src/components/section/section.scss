@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use '../../assets/scss/default/variables/size' as size;
 .section {
     height: 100%;
     overflow: hidden;
@@ -18,6 +18,6 @@
         transform: scale(3);
         opacity: 0;
         transition: transform .6s ease, opacity .5s ease;
-        padding-top: $header-height;
+        padding-top: size.$header-height;
     }
 }
