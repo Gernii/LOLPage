@@ -29,10 +29,25 @@ const Welcome = props => {
             })
             animates.push(animation)
             // console.log(animation);
-
         })
         // console.log(animates);
         welcomeImgs.forEach(e => e.remove())
+
+        let currItem = 0
+        const autoImageSlide = () => {
+            let prevImg = currItem
+            currItem = (currItem + 1) % animates.length
+            if (!document.hidden){
+                animates[prevImg].next()
+            }
+            setTimeout(() => {
+                let canvas = document.querySelectorAll('.welcome__img__slide > canvas')
+                document.querySelector('.welcome__img__slide').appendChild(canvas[0])
+                animates[prevImg].previous()
+
+            }, 3000)
+        }
+        setInterval(autoImageSlide, 3000)
     }, [])
 
     return (

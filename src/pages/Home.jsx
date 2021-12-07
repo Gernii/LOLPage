@@ -9,7 +9,8 @@ import SwiperCore, {
 } from 'swiper'
 
 import {
-  Welcome
+  Welcome,
+  Champion
 } from '../components/home-section'
 
 SwiperCore.use([Mousewheel, Pagination, EffectFade])
@@ -21,7 +22,7 @@ const swiperOptions = {
   mousewheel: true,
   pagination: true,
   effect: 'fade',
-  speed: 1000,
+  speed: 1000
 }
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
           {({isActive}) => <Welcome isActive={isActive}/>}
         </SwiperSlide>
         <SwiperSlide>
-          slide 2
+          {({isActive}) => <Champion isActive={isActive}/>}
         </SwiperSlide>
       </Swiper>
     </>

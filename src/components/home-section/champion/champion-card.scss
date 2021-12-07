@@ -1,0 +1,35 @@
+@use '../../../assets/scss/default/variables/size' as size;
+@use 'sass:math';
+
+.champion-card{
+  width: size.$champ-card-width;
+  height: #{math.div(size.$champ-card-width * 9, 16)}px;
+  position: relative;
+  pointer-events: none;
+
+  img{
+    max-width: 100%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease ;
+
+  }
+  &:hover img{
+    opacity: 1;
+  }
+
+  .frame .name {
+    position: absolute;
+    left: 50%;
+    transition: translateX(-50%);
+
+  }
+
+  .frame{
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    bottom: 0;
+  }
+}
+
