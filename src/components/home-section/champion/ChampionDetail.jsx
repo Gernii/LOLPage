@@ -16,7 +16,7 @@ const ChampionDetail = props => {
         document.querySelector(`#champ-detail-${props.id}`).classList.remove('active')
         iframeRef.current.setAttribute('src' , '')
 
-        const img = document.querySelector(`#champ-detail-${props.id}`)
+        const img = document.querySelector(`#champ-img-${props.id}`)
         img.style.opacity = 0
         setTimeout(() =>{
             img.remove()
@@ -39,6 +39,7 @@ const ChampionDetail = props => {
                 <span>
                     Role: <span className="second-color">{item.role}</span>
                 </span>
+                <br />
                 <span>
                     Difficulty: <span className="second-color">{item.difficulty}</span>
                 </span>

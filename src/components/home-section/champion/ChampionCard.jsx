@@ -15,7 +15,7 @@ const ChampionCard = props => {
         newNode.style.position = 'absolute'
         newNode.style.top = pos.top + 'px'
         newNode.style.left = pos.left + 'px'
-        newNode.style.zIndex = '1'
+        newNode.style.zIndex = '4'
 
         newNode.style.transition = 'all .7s ease'
         newNode.id = `champ-img-${props.id}`
