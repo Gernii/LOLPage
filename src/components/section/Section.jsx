@@ -9,7 +9,7 @@ const Section = props => {
 }
 
 export const SectionContent = props => {
-
+    console.log(props.bgImage)
     const bgImage = props.bgImage ? {
         backgroundImage : `url(${props.bgImage})`
     } : {}
